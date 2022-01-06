@@ -2,10 +2,10 @@
 framework: jest
 postMerge:
   pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
+    - 'test/**/*.test.{js,ts,tsx}'
 preMerge:
   pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
+    - 'test/**/*.test.{js,ts,tsx}'
 preRun:
   command:
     - yarn

@@ -1,5 +1,6 @@
 ---
 framework: jest
+tier: large
 postMerge:
   pattern:
     - 'test/unit/**/*.test.{js,ts,tsx}'
@@ -11,5 +12,5 @@ preRun:
     - yarn
 postRun:
   command:
-    - node --version
+    - yarn --version
 version: 1.0

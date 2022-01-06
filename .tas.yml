@@ -1,16 +1,15 @@
+---
 framework: jest
-licenseTier: xsmall
-preRun:
-     command:
-        - yarn install
-        - yarn run build
+postMerge:
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
 preMerge:
   pattern:
-    - './test/unit/**/*.test.ts'
-postMerge: 
-  pattern: 
-    - './test/unit/**/*.test.ts'
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preRun:
+  command:
+    - yarn
 postRun:
-     command:
-        - yarn --version
+  command:
+    - node --version
 version: 1.0

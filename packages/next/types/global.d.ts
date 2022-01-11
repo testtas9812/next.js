@@ -29,3 +29,4 @@ declare module '*.module.scss' {
 interface Window {
   MSInputMethodContext?: unknown
 }
+//Additioanl

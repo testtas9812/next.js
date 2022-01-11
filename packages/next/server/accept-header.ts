@@ -63,7 +63,6 @@ function parse(
     if (!token) {
       throw new Error(`Invalid ${options.type} header`)
     }
-
     const selection: Selection = { token, pos: i, q: 1 }
     if (preferences && lowers.has(token)) {
       selection.pref = lowers.get(token)!.pos

@@ -1,6 +1,5 @@
 ---
 framework: jest
-tier: medium
 postMerge:
   pattern:
     - 'test/unit/**/*.test.{js,ts,tsx}'

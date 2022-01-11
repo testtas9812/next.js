@@ -2,10 +2,11 @@
 framework: jest
 postMerge:
   pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
+    - 'test/unit/loadGetInitialProps.test.ts'
+#     - 'test/unit/**/*.test.{js,ts,tsx}'
 preMerge:
   pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
+    - 'test/unit/loadGetInitialProps.test.ts'
 preRun:
   command:
     - yarn
